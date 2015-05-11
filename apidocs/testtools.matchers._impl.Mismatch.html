@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>testtools.matchers._impl.Mismatch : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">t.m._.Mismatch(<span title="object">object</span>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="testtools.html">testtools</a>.<a href="testtools.matchers.html">matchers</a>.<a href="testtools.matchers._impl.html">_impl</a></span>
+      
+      <a href="classIndex.html#testtools.matchers._impl.Mismatch">View In Hierarchy</a>
+    </p>
+    <div>
+      <p>Known subclasses: <a href="testtools.matchers._basic._BinaryMismatch.html">testtools.matchers._basic._BinaryMismatch</a>, <a href="testtools.matchers._basic.DoesNotContain.html">testtools.matchers._basic.DoesNotContain</a>, <a href="testtools.matchers._basic.DoesNotEndWith.html">testtools.matchers._basic.DoesNotEndWith</a>, <a href="testtools.matchers._basic.DoesNotStartWith.html">testtools.matchers._basic.DoesNotStartWith</a>, <a href="testtools.matchers._basic.NotAnInstance.html">testtools.matchers._basic.NotAnInstance</a>, <a href="testtools.matchers._dict.DictMismatches.html">testtools.matchers._dict.DictMismatches</a>, <a href="testtools.matchers._doctest.DocTestMismatch.html">testtools.matchers._doctest.DocTestMismatch</a>, <a href="testtools.matchers._higherorder.MatchedUnexpectedly.html">testtools.matchers._higherorder.MatchedUnexpectedly</a>, <a href="testtools.matchers._higherorder.MismatchesAll.html">testtools.matchers._higherorder.MismatchesAll</a></p>
+    </div>
+    <div class="docstring">
+      <div>An object describing a mismatch detected by a Matcher.<table class="fieldTable"></table></div>
+    </div>
+
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id124">
+  
+  
+  <tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.matchers._impl.Mismatch.html#__init__">__init__</a></td>
+    <td><span>Construct a <a href="testtools.matchers._impl.Mismatch.html"><code>Mismatch</code></a>.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.matchers._impl.Mismatch.html#describe">describe</a></td>
+    <td><span>Describe the mismatch.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.matchers._impl.Mismatch.html#get_details">get_details</a></td>
+    <td><span>Get extra details about the mismatch.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.matchers._impl.Mismatch.html#__repr__">__repr__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+      
+    </div>
+    
+    
+
+    <div class="function">
+  <a name="testtools.matchers._impl.Mismatch.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, description=None, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overridden in <a href="testtools.matchers._basic._BinaryMismatch.html">testtools.matchers._basic._BinaryMismatch</a>, <a href="testtools.matchers._basic.DoesNotContain.html">testtools.matchers._basic.DoesNotContain</a>, <a href="testtools.matchers._basic.DoesNotEndWith.html">testtools.matchers._basic.DoesNotEndWith</a>, <a href="testtools.matchers._basic.DoesNotStartWith.html">testtools.matchers._basic.DoesNotStartWith</a>, <a href="testtools.matchers._basic.NotAnInstance.html">testtools.matchers._basic.NotAnInstance</a>, <a href="testtools.matchers._dict.DictMismatches.html">testtools.matchers._dict.DictMismatches</a>, <a href="testtools.matchers._doctest.DocTestMismatch.html">testtools.matchers._doctest.DocTestMismatch</a>, <a href="testtools.matchers._higherorder.MatchedUnexpectedly.html">testtools.matchers._higherorder.MatchedUnexpectedly</a>, <a href="testtools.matchers._higherorder.MismatchesAll.html">testtools.matchers._higherorder.MismatchesAll</a></div>
+    <div>Construct a <a href="testtools.matchers._impl.Mismatch.html"><code>Mismatch</code></a>.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">description</td><td>A description to use.  If not provided,
+<a href="testtools.matchers._impl.Mismatch.html#describe"><code>Mismatch.describe</code></a> must be implemented.</td></tr><tr><td></td><td class="fieldArg">details</td><td>Extra details about the mismatch.  Defaults
+to the empty dict.</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.matchers._impl.Mismatch.describe">
+    
+  </a>
+  <a name="describe">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    describe(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overridden in <a href="testtools.matchers._basic._BinaryMismatch.html">testtools.matchers._basic._BinaryMismatch</a>, <a href="testtools.matchers._basic.DoesNotContain.html">testtools.matchers._basic.DoesNotContain</a>, <a href="testtools.matchers._basic.DoesNotEndWith.html">testtools.matchers._basic.DoesNotEndWith</a>, <a href="testtools.matchers._basic.DoesNotStartWith.html">testtools.matchers._basic.DoesNotStartWith</a>, <a href="testtools.matchers._basic.NotAnInstance.html">testtools.matchers._basic.NotAnInstance</a>, <a href="testtools.matchers._dict.DictMismatches.html">testtools.matchers._dict.DictMismatches</a>, <a href="testtools.matchers._doctest.DocTestMismatch.html">testtools.matchers._doctest.DocTestMismatch</a>, <a href="testtools.matchers._higherorder.MatchedUnexpectedly.html">testtools.matchers._higherorder.MatchedUnexpectedly</a>, <a href="testtools.matchers._higherorder.MismatchesAll.html">testtools.matchers._higherorder.MismatchesAll</a></div>
+    <div><p>Describe the mismatch.</p>
+<p>This should be either a human-readable string or castable to a string.
+In particular, is should either be plain ascii or unicode on Python 2,
+and care should be taken to escape control characters.</p><table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.matchers._impl.Mismatch.get_details">
+    
+  </a>
+  <a name="get_details">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    get_details(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get extra details about the mismatch.</p>
+<p>This allows the mismatch to provide extra information beyond the basic
+description, including large text or binary files, or debugging internals
+without having to force it to fit in the output of 'describe'.</p>
+<p>The testtools assertion assertThat will query get_details and attach
+all its values to the test, permitting them to be reported in whatever
+manner the test environment chooses.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">a dict mapping names to Content objects. name is a string to
+name the detail, and the Content object is the detail to add
+to the result. For more information see the API to which items from
+this dict are passed testtools.TestCase.addDetail.</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.matchers._impl.Mismatch.__repr__">
+    
+  </a>
+  <a name="__repr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __repr__(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/testing-cabal/testtools">testtools</a>, generated by <a href="https://launchpad.net/pydoctor/">pydoctor</a> at 2015-05-10 23:16:58.
+    </address>
+  </body>
+</html>

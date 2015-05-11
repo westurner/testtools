@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>testtools.tests.test_testresult.TestTimestampingStreamResult : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">t.t.t.TestTimestampingStreamResult(<a href="testtools.testcase.TestCase.html">TestCase</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="testtools.html">testtools</a>.<a href="testtools.tests.html">tests</a>.<a href="testtools.tests.test_testresult.html">test_testresult</a></span>
+      
+      <a href="classIndex.html#testtools.tests.test_testresult.TestTimestampingStreamResult">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div class="docstring">
+      <div class="undocumented">Undocumented</div>
+    </div>
+
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id718">
+  
+  
+  <tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.tests.test_testresult.TestTimestampingStreamResult.html#test_startTestRun">test_startTestRun</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.tests.test_testresult.TestTimestampingStreamResult.html#test_stopTestRun">test_stopTestRun</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.tests.test_testresult.TestTimestampingStreamResult.html#test_status_no_timestamp">test_status_no_timestamp</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.tests.test_testresult.TestTimestampingStreamResult.html#test_status_timestamp">test_status_timestamp</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+      <invisible>
+        <p>
+          Inherited from <a href="testtools.testcase.TestCase.html">TestCase</a>:
+        </p>
+        <table class="children sortable" id="id719">
+  
+  
+  <tr class="baseinstancevariable">
+    
+    
+    <td>Instance Variable</td>
+    <td><a href="testtools.testcase.TestCase.html#exception_handlers">exception_handlers</a></td>
+    <td>Exceptions to catch from setUp, runTest and
+tearDown. This list is able to be modified at any time and consists of
+(exception_class, handler(case, result, exception_value)) pairs.</td>
+  </tr><tr class="baseinstancevariable">
+    
+    
+    <td>Instance Variable</td>
+    <td><a href="testtools.testcase.TestCase.html#force_failure">force_failure</a></td>
+    <td>Force testtools.RunTest to fail the test after the
+test has completed.</td>
+  </tr><tr class="baseclassvariable">
+    
+    
+    <td>Class Variable</td>
+    <td><a href="testtools.testcase.TestCase.html#run_tests_with">run_tests_with</a></td>
+    <td>A factory to make the <tt class="rst-docutils literal">RunTest</tt> to run tests with.
+Defaults to <tt class="rst-docutils literal">RunTest</tt>.  The factory is expected to take a test case
+and an optional list of exception handlers.</td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#__init__">__init__</a></td>
+    <td><span>Construct a TestCase.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#__eq__">__eq__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#__repr__">__repr__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#addDetail">addDetail</a></td>
+    <td><span>Add a detail to be reported with this test's outcome.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#getDetails">getDetails</a></td>
+    <td><span>Get the details dict that will be reported with this test's outcome.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#patch">patch</a></td>
+    <td><span>Monkey-patch 'obj.attribute' to 'value' while the test is running.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#shortDescription">shortDescription</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#skipTest">skipTest</a></td>
+    <td><span>Cause this test to be skipped.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#addCleanup">addCleanup</a></td>
+    <td><span>Add a cleanup function to be called after tearDown.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#addOnException">addOnException</a></td>
+    <td><span>Add a handler to be called when an exception occurs in test code.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertEqual">assertEqual</a></td>
+    <td><span>Assert that 'expected' is equal to 'observed'.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertIn">assertIn</a></td>
+    <td><span>Assert that needle is in haystack.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertIsNone">assertIsNone</a></td>
+    <td><span>Assert that 'observed' is equal to None.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertIsNotNone">assertIsNotNone</a></td>
+    <td><span>Assert that 'observed' is not equal to None.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertIs">assertIs</a></td>
+    <td><span>Assert that 'expected' is 'observed'.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertIsNot">assertIsNot</a></td>
+    <td><span>Assert that 'expected' is not 'observed'.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertNotIn">assertNotIn</a></td>
+    <td><span>Assert that needle is not in haystack.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertIsInstance">assertIsInstance</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertRaises">assertRaises</a></td>
+    <td><span class="undocumented">No summary</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#assertThat">assertThat</a></td>
+    <td><span>Assert that matchee is matched by matcher.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#addDetailUniqueName">addDetailUniqueName</a></td>
+    <td><span>Add a detail to the test, but ensure it's name is unique.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#expectThat">expectThat</a></td>
+    <td><span>Check that matchee is matched by matcher, but delay the assertion failure.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#defaultTestResult">defaultTestResult</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#expectFailure">expectFailure</a></td>
+    <td><span>Check that a test fails in a particular way.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#getUniqueInteger">getUniqueInteger</a></td>
+    <td><span>Get an integer unique to this test.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#getUniqueString">getUniqueString</a></td>
+    <td><span>Get a string unique to this test.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#onException">onException</a></td>
+    <td><span>Called when an exception propogates from test code.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#run">run</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#useFixture">useFixture</a></td>
+    <td><span>Use fixture in a test case.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#setUp">setUp</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#tearDown">tearDown</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_formatTypes">_formatTypes</a></td>
+    <td><span>Format a class or a bunch of classes for display in an error.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_add_reason">_add_reason</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_matchHelper">_matchHelper</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basestaticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_report_error">_report_error</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basestaticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_report_expected_failure">_report_expected_failure</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basestaticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_report_failure">_report_failure</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basestaticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_report_skip">_report_skip</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_report_traceback">_report_traceback</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basestaticmethod private">
+    
+    
+    <td>Static Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_report_unexpected_success">_report_unexpected_success</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_run_setup">_run_setup</a></td>
+    <td><span>Run the setUp function for this test.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_run_teardown">_run_teardown</a></td>
+    <td><span>Run the tearDown function for this test.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_get_test_method">_get_test_method</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testcase.TestCase.html#_run_test_method">_run_test_method</a></td>
+    <td><span>Run the test method for this test.</span></td>
+  </tr>
+</table>
+      </invisible>
+    </div>
+    
+    
+
+    <div class="function">
+  <a name="testtools.tests.test_testresult.TestTimestampingStreamResult.test_startTestRun">
+    
+  </a>
+  <a name="test_startTestRun">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_startTestRun(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.tests.test_testresult.TestTimestampingStreamResult.test_stopTestRun">
+    
+  </a>
+  <a name="test_stopTestRun">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_stopTestRun(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.tests.test_testresult.TestTimestampingStreamResult.test_status_no_timestamp">
+    
+  </a>
+  <a name="test_status_no_timestamp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_status_no_timestamp(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.tests.test_testresult.TestTimestampingStreamResult.test_status_timestamp">
+    
+  </a>
+  <a name="test_status_timestamp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_status_timestamp(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/testing-cabal/testtools">testtools</a>, generated by <a href="https://launchpad.net/pydoctor/">pydoctor</a> at 2015-05-10 23:16:58.
+    </address>
+  </body>
+</html>

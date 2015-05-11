@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>testtools.testresult.TextTestResult : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">t.t.TextTestResult(<a href="testtools.testresult.real.TestResult.html">TestResult</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="testtools.html">testtools</a>.<a href="testtools.testresult.html">testresult</a></span>
+      
+      <a href="classIndex.html#testtools.testresult.TextTestResult">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div class="docstring">
+      <div>A TestResult which outputs activity to a text stream.<table class="fieldTable"></table></div>
+    </div>
+
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id149">
+  
+  
+  <tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.TextTestResult.html#__init__">__init__</a></td>
+    <td><span>Construct a TextTestResult writing to stream.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.TextTestResult.html#startTestRun">startTestRun</a></td>
+    <td><span>Called before a test run starts.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.TextTestResult.html#stopTestRun">stopTestRun</a></td>
+    <td><span>Called after a test run completes</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.TextTestResult.html#_delta_to_float">_delta_to_float</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.TextTestResult.html#_show_list">_show_list</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+      <invisible>
+        <p>
+          Inherited from <a href="testtools.testresult.real.TestResult.html">TestResult</a>:
+        </p>
+        <table class="children sortable" id="id150">
+  
+  
+  <tr class="baseinstancevariable">
+    
+    
+    <td>Instance Variable</td>
+    <td><a href="testtools.testresult.real.TestResult.html#skip_reasons">skip_reasons</a></td>
+    <td>A dict of skip-reasons -&gt; list of tests. See addSkip.</td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#addExpectedFailure">addExpectedFailure</a></td>
+    <td><span>Called when a test has failed in an expected manner.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#addError">addError</a></td>
+    <td><span>Called when an error has occurred. 'err' is a tuple of values as returned by sys.exc_info().</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#addFailure">addFailure</a></td>
+    <td><span>Called when an error has occurred. 'err' is a tuple of values as returned by sys.exc_info().</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#addSkip">addSkip</a></td>
+    <td><span>Called when a test has been skipped rather than running.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#addSuccess">addSuccess</a></td>
+    <td><span>Called when a test succeeded.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#addUnexpectedSuccess">addUnexpectedSuccess</a></td>
+    <td><span>Called when a test was expected to fail, but succeed.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#wasSuccessful">wasSuccessful</a></td>
+    <td><span>Has this result been successful so far?</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#startTest">startTest</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#stopTest">stopTest</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#current_tags">current_tags</a></td>
+    <td><span>The currently set tags.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#tags">tags</a></td>
+    <td><span>Add and remove tags from the test.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#time">time</a></td>
+    <td><span>Provide a timestamp to represent the current time.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#done">done</a></td>
+    <td><span>Called when the test runner is done.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#_err_details_to_string">_err_details_to_string</a></td>
+    <td><span>Convert an error in exc_info form or a contents dict to a string.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#_exc_info_to_unicode">_exc_info_to_unicode</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#_now">_now</a></td>
+    <td><span>Return the current 'test time'.</span></td>
+  </tr>
+</table>
+      </invisible>
+    </div>
+    
+    
+
+    <div class="function">
+  <a name="testtools.testresult.TextTestResult.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, stream, failfast=False, tb_locals=False):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#__init__">testtools.testresult.real.TestResult.__init__</a></div>
+    <div>Construct a TextTestResult writing to stream.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.TextTestResult._delta_to_float">
+    
+  </a>
+  <a name="_delta_to_float">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _delta_to_float(self, a_timedelta, precision):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.TextTestResult._show_list">
+    
+  </a>
+  <a name="_show_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _show_list(self, label, error_list):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.TextTestResult.startTestRun">
+    
+  </a>
+  <a name="startTestRun">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    startTestRun(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#startTestRun">testtools.testresult.real.TestResult.startTestRun</a></div>
+    <div><p>Called before a test run starts.</p>
+<p>New in Python 2.7. The testtools version resets the result to a
+pristine condition ready for use in another test run.  Note that this
+is different from Python 2.7's startTestRun, which does nothing.</p><table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.TextTestResult.stopTestRun">
+    
+  </a>
+  <a name="stopTestRun">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    stopTestRun(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#stopTestRun">testtools.testresult.real.TestResult.stopTestRun</a></div>
+    <div><p>Called after a test run completes</p>
+<p>New in python 2.7</p><table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/testing-cabal/testtools">testtools</a>, generated by <a href="https://launchpad.net/pydoctor/">pydoctor</a> at 2015-05-10 23:16:58.
+    </address>
+  </body>
+</html>

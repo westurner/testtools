@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>testtools.testresult.real.ThreadsafeForwardingResult : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="class">t.t.r.ThreadsafeForwardingResult(<a href="testtools.testresult.real.TestResult.html">TestResult</a>) : class documentation</h1>
+    <p>
+      <span id="part">Part of <a href="testtools.html">testtools</a>.<a href="testtools.testresult.html">testresult</a>.<a href="testtools.testresult.real.html">real</a></span>
+      
+      <a href="classIndex.html#testtools.testresult.real.ThreadsafeForwardingResult">View In Hierarchy</a>
+    </p>
+    <div>
+      
+    </div>
+    <div class="docstring">
+      <div><p>A TestResult which ensures the target does not receive mixed up calls.</p>
+<p>Multiple <tt class="rst-docutils literal">ThreadsafeForwardingResults</tt> can forward to the same target
+result, and that target result will only ever receive the complete set of
+events for one test at a time.</p>
+<p>This is enforced using a semaphore, which further guarantees that tests
+will be sent atomically even if the <tt class="rst-docutils literal">ThreadsafeForwardingResults</tt> are in
+different threads.</p>
+<p><tt class="rst-docutils literal">ThreadsafeForwardingResult</tt> is typically used by
+<tt class="rst-docutils literal">ConcurrentTestSuite</tt>, which creates one <tt class="rst-docutils literal">ThreadsafeForwardingResult</tt>
+per thread, each of which wraps of the TestResult that
+<tt class="rst-docutils literal">ConcurrentTestSuite.run()</tt> is called with.</p>
+<p>target.startTestRun() and target.stopTestRun() are called once for each
+ThreadsafeForwardingResult that forwards to the same target. If the target
+takes special action on these events, it should take care to accommodate
+this.</p>
+<p>time() and tags() calls are batched to be adjacent to the test result and
+in the case of tags() are coerced into test-local scope, avoiding the
+opportunity for bugs around global state in the target.</p><table class="fieldTable"></table></div>
+    </div>
+
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id175">
+  
+  
+  <tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#__init__">__init__</a></td>
+    <td><span>Create a ThreadsafeForwardingResult forwarding to target.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#__repr__">__repr__</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#addError">addError</a></td>
+    <td><span>Called when an error has occurred. 'err' is a tuple of values as returned by sys.exc_info().</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#addExpectedFailure">addExpectedFailure</a></td>
+    <td><span>Called when a test has failed in an expected manner.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#addFailure">addFailure</a></td>
+    <td><span>Called when an error has occurred. 'err' is a tuple of values as returned by sys.exc_info().</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#addSkip">addSkip</a></td>
+    <td><span>Called when a test has been skipped rather than running.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#addSuccess">addSuccess</a></td>
+    <td><span>Called when a test succeeded.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#addUnexpectedSuccess">addUnexpectedSuccess</a></td>
+    <td><span>Called when a test was expected to fail, but succeed.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#progress">progress</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#startTestRun">startTestRun</a></td>
+    <td><span>Called before a test run starts.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#stop">stop</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#stopTestRun">stopTestRun</a></td>
+    <td><span>Called after a test run completes</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#done">done</a></td>
+    <td><span>Called when the test runner is done.</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#startTest">startTest</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#wasSuccessful">wasSuccessful</a></td>
+    <td><span>Has this result been successful so far?</span></td>
+  </tr><tr class="method">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#tags">tags</a></td>
+    <td><span>See <a href="testtools.testresult.real.TestResult.html"><code>TestResult</code></a>.</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#_any_tags">_any_tags</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#_add_result_with_semaphore">_add_result_with_semaphore</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#_get_shouldStop">_get_shouldStop</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html#_set_shouldStop">_set_shouldStop</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+      <invisible>
+        <p>
+          Inherited from <a href="testtools.testresult.real.TestResult.html">TestResult</a>:
+        </p>
+        <table class="children sortable" id="id176">
+  
+  
+  <tr class="baseinstancevariable">
+    
+    
+    <td>Instance Variable</td>
+    <td><a href="testtools.testresult.real.TestResult.html#skip_reasons">skip_reasons</a></td>
+    <td>A dict of skip-reasons -&gt; list of tests. See addSkip.</td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#stopTest">stopTest</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#current_tags">current_tags</a></td>
+    <td><span>The currently set tags.</span></td>
+  </tr><tr class="basemethod">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#time">time</a></td>
+    <td><span>Provide a timestamp to represent the current time.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#_err_details_to_string">_err_details_to_string</a></td>
+    <td><span>Convert an error in exc_info form or a contents dict to a string.</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#_exc_info_to_unicode">_exc_info_to_unicode</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    
+    <td>Method</td>
+    <td><a href="testtools.testresult.real.TestResult.html#_now">_now</a></td>
+    <td><span>Return the current 'test time'.</span></td>
+  </tr>
+</table>
+      </invisible>
+    </div>
+    
+    
+
+    <div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, target, semaphore):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#__init__">testtools.testresult.real.TestResult.__init__</a></div>
+    <div>Create a ThreadsafeForwardingResult forwarding to target.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">target</td><td>A <tt class="rst-docutils literal">TestResult</tt>.</td></tr><tr><td></td><td class="fieldArg">semaphore</td><td>A <tt class="rst-docutils literal">threading.Semaphore</tt> with limit 1.</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.__repr__">
+    
+  </a>
+  <a name="__repr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __repr__(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult._any_tags">
+    
+  </a>
+  <a name="_any_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _any_tags(self, tags):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult._add_result_with_semaphore">
+    
+  </a>
+  <a name="_add_result_with_semaphore">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _add_result_with_semaphore(self, method, test, *args, **kwargs):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.addError">
+    
+  </a>
+  <a name="addError">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    addError(self, test, err=None, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#addError">testtools.testresult.real.TestResult.addError</a></div>
+    <div>Called when an error has occurred. 'err' is a tuple of values as
+returned by sys.exc_info().<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">details</td><td>Alternative way to supply details about the outcome.
+see the class docstring for more information.</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.addExpectedFailure">
+    
+  </a>
+  <a name="addExpectedFailure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    addExpectedFailure(self, test, err=None, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#addExpectedFailure">testtools.testresult.real.TestResult.addExpectedFailure</a></div>
+    <div><p>Called when a test has failed in an expected manner.</p>
+<p>Like with addSuccess and addError, testStopped should still be called.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">test</td><td>The test that has been skipped.</td></tr><tr><td></td><td class="fieldArg">err</td><td>The exc_info of the error that was raised.</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.addFailure">
+    
+  </a>
+  <a name="addFailure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    addFailure(self, test, err=None, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#addFailure">testtools.testresult.real.TestResult.addFailure</a></div>
+    <div>Called when an error has occurred. 'err' is a tuple of values as
+returned by sys.exc_info().<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">details</td><td>Alternative way to supply details about the outcome.
+see the class docstring for more information.</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.addSkip">
+    
+  </a>
+  <a name="addSkip">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    addSkip(self, test, reason=None, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#addSkip">testtools.testresult.real.TestResult.addSkip</a></div>
+    <div><p>Called when a test has been skipped rather than running.</p>
+<p>Like with addSuccess and addError, testStopped should still be called.</p>
+<p>This must be called by the TestCase. 'addError' and 'addFailure' will
+not call addSkip, since they have no assumptions about the kind of
+errors that a test can raise.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">test</td><td>The test that has been skipped.</td></tr><tr><td></td><td class="fieldArg">reason</td><td>The reason for the test being skipped. For instance,
+u"pyGL is not available".</td></tr><tr><td></td><td class="fieldArg">details</td><td>Alternative way to supply details about the outcome.
+see the class docstring for more information.</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">None</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.addSuccess">
+    
+  </a>
+  <a name="addSuccess">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    addSuccess(self, test, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#addSuccess">testtools.testresult.real.TestResult.addSuccess</a></div>
+    <div>Called when a test succeeded.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.addUnexpectedSuccess">
+    
+  </a>
+  <a name="addUnexpectedSuccess">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    addUnexpectedSuccess(self, test, details=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#addUnexpectedSuccess">testtools.testresult.real.TestResult.addUnexpectedSuccess</a></div>
+    <div>Called when a test was expected to fail, but succeed.<table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.progress">
+    
+  </a>
+  <a name="progress">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    progress(self, offset, whence):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.startTestRun">
+    
+  </a>
+  <a name="startTestRun">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    startTestRun(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#startTestRun">testtools.testresult.real.TestResult.startTestRun</a></div>
+    <div><p>Called before a test run starts.</p>
+<p>New in Python 2.7. The testtools version resets the result to a
+pristine condition ready for use in another test run.  Note that this
+is different from Python 2.7's startTestRun, which does nothing.</p><table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult._get_shouldStop">
+    
+  </a>
+  <a name="_get_shouldStop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _get_shouldStop(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult._set_shouldStop">
+    
+  </a>
+  <a name="_set_shouldStop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _set_shouldStop(self, value):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    stop(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.stopTestRun">
+    
+  </a>
+  <a name="stopTestRun">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    stopTestRun(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#stopTestRun">testtools.testresult.real.TestResult.stopTestRun</a></div>
+    <div><p>Called after a test run completes</p>
+<p>New in python 2.7</p><table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.done">
+    
+  </a>
+  <a name="done">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    done(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#done">testtools.testresult.real.TestResult.done</a></div>
+    <div><p>Called when the test runner is done.</p>
+<p>deprecated in favour of stopTestRun.</p><table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.startTest">
+    
+  </a>
+  <a name="startTest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    startTest(self, test):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#startTest">testtools.testresult.real.TestResult.startTest</a></div>
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.wasSuccessful">
+    
+  </a>
+  <a name="wasSuccessful">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    wasSuccessful(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#wasSuccessful">testtools.testresult.real.TestResult.wasSuccessful</a></div>
+    <div><p>Has this result been successful so far?</p>
+<p>If there have been any errors, failures or unexpected successes,
+return False.  Otherwise, return True.</p>
+<p>Note: This differs from standard unittest in that we consider
+unexpected successes to be equivalent to failures, rather than
+successes.</p><table class="fieldTable"></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.ThreadsafeForwardingResult.tags">
+    
+  </a>
+  <a name="tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    tags(self, new_tags, gone_tags):
+    
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <a href="testtools.testresult.real.TestResult.html#tags">testtools.testresult.real.TestResult.tags</a></div>
+    <div>See <a href="testtools.testresult.real.TestResult.html"><code>TestResult</code></a>.<table class="fieldTable"></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/testing-cabal/testtools">testtools</a>, generated by <a href="https://launchpad.net/pydoctor/">pydoctor</a> at 2015-05-10 23:16:58.
+    </address>
+  </body>
+</html>

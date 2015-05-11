@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>testtools.testresult.real : API documentation</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <link href="apidocs.css" type="text/css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>
+    <h1 class="module">t.t.real : module documentation</h1>
+    <p>
+      <span id="part">Part of <a href="testtools.html">testtools</a>.<a href="testtools.testresult.html">testresult</a></span>
+      
+      
+    </p>
+    <div>
+      
+    </div>
+    <div class="docstring">
+      <div>Test results and related things.<table class="fieldTable"></table></div>
+    </div>
+
+    
+    <div id="splitTables">
+      <table class="children sortable" id="id161">
+  
+  
+  <tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.UTC.html">UTC</a></td>
+    <td><span>UTC</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.TestResult.html">TestResult</a></td>
+    <td><span>Subclass of unittest.TestResult extending the protocol for flexability.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamResult.html">StreamResult</a></td>
+    <td><span>A test result for reporting the activity of a test run.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="testtools.testresult.real.html#domap">domap</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamFailFast.html">StreamFailFast</a></td>
+    <td><span>Call the supplied callback if an error is seen in a stream.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamTagger.html">StreamTagger</a></td>
+    <td><span>Adds or discards tags from StreamResult events.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamToDict.html">StreamToDict</a></td>
+    <td><span>A specialised StreamResult that emits a callback as tests complete.</span></td>
+  </tr><tr class="function">
+    
+    
+    <td>Function</td>
+    <td><a href="testtools.testresult.real.html#test_dict_to_case">test_dict_to_case</a></td>
+    <td><span>Convert a test dict into a TestCase object.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamSummary.html">StreamSummary</a></td>
+    <td><span>A specialised StreamResult that summarises a stream.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.TestControl.html">TestControl</a></td>
+    <td><span>Controls a running test run, allowing it to be interrupted.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.MultiTestResult.html">MultiTestResult</a></td>
+    <td><span>A test result that dispatches to many test results.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.ThreadsafeForwardingResult.html">ThreadsafeForwardingResult</a></td>
+    <td><span>A TestResult which ensures the target does not receive mixed up calls.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.ExtendedToOriginalDecorator.html">ExtendedToOriginalDecorator</a></td>
+    <td><span>Permit new TestResult API code to degrade gracefully with old results.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.ExtendedToStreamDecorator.html">ExtendedToStreamDecorator</a></td>
+    <td><span>Permit using old TestResult API code with new StreamResult objects.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamToExtendedDecorator.html">StreamToExtendedDecorator</a></td>
+    <td><span>Convert StreamResult API calls into ExtendedTestResult calls.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.StreamToQueue.html">StreamToQueue</a></td>
+    <td><span>A StreamResult which enqueues events as a dict to a queue.Queue.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.TestResultDecorator.html">TestResultDecorator</a></td>
+    <td><span>General pass-through decorator.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.Tagger.html">Tagger</a></td>
+    <td><span>Tag each test individually.</span></td>
+  </tr><tr class="class">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real.TimestampingStreamResult.html">TimestampingStreamResult</a></td>
+    <td><span>A StreamResult decorator that assigns a timestamp when none is present.</span></td>
+  </tr><tr class="function private">
+    
+    
+    <td>Function</td>
+    <td><a href="testtools.testresult.real.html#_merge_tags">_merge_tags</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="class private">
+    
+    
+    <td>Class</td>
+    <td><a href="testtools.testresult.real._StringException.html">_StringException</a></td>
+    <td><span>An exception made from an arbitrary string.</span></td>
+  </tr><tr class="function private">
+    
+    
+    <td>Function</td>
+    <td><a href="testtools.testresult.real.html#_format_text_attachment">_format_text_attachment</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    
+    <td>Function</td>
+    <td><a href="testtools.testresult.real.html#_details_to_str">_details_to_str</a></td>
+    <td><span>Convert a details dict to a string.</span></td>
+  </tr>
+</table>
+      
+    </div>
+    
+    
+
+    <div class="function">
+  <a name="testtools.testresult.real.domap">
+    
+  </a>
+  <a name="domap">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    domap(*args, **kwargs):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real.test_dict_to_case">
+    
+  </a>
+  <a name="test_dict_to_case">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    test_dict_to_case(test_dict):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div>Convert a test dict into a TestCase object.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">test_dict</td><td>A test dict as generated by StreamToDict.</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">A PlaceHolder test object.</td></tr></table></div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real._merge_tags">
+    
+  </a>
+  <a name="_merge_tags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _merge_tags(existing, changed):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real._format_text_attachment">
+    
+  </a>
+  <a name="_format_text_attachment">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _format_text_attachment(name, text):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="function">
+  <a name="testtools.testresult.real._details_to_str">
+    
+  </a>
+  <a name="_details_to_str">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    _details_to_str(details, special=None):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    <div>Convert a details dict to a string.<table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">details</td><td>A dictionary mapping short names to <tt class="rst-docutils literal">Content</tt> objects.</td></tr><tr><td></td><td class="fieldArg">special</td><td>If specified, an attachment that should have special
+attention drawn to it. The primary attachment. Normally it's the
+traceback that caused the test to fail.</td></tr><tr class="fieldStart"><td class="fieldName">Returns</td><td colspan="2">A formatted string that can be included in text test results.</td></tr></table></div>
+  </div>
+</div>
+    <address>
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/testing-cabal/testtools">testtools</a>, generated by <a href="https://launchpad.net/pydoctor/">pydoctor</a> at 2015-05-10 23:16:58.
+    </address>
+  </body>
+</html>
